@@ -1,0 +1,77 @@
+.advantages{
+  padding-top: 100px;
+  color: @text-color;
+  text-align: center;
+  &__header{
+    .ffbold;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+  }
+  &__list{
+    .range;
+    list-style: none;
+    font-size: 0;
+  }
+  &__item{
+    .col-4;
+    text-align: center;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 80px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 5px;
+    }
+  }
+  &__item:nth-child(1){
+    &:before{.sprite(@icon-adv-battery);}
+  }
+  &__item:nth-child(2){
+    &:before{.sprite(@icon-adv-shield);}
+  }
+  &__item:nth-child(3){
+    &:before{.sprite(@icon-adv-pig);}
+  }
+  &__item:nth-child(4){
+    &:before{.sprite(@icon-adv-mute);}
+  }
+  &__item:nth-child(5){
+    &:before{
+      .sprite(@icon-adv-tape);
+      top: 15px;
+    }
+  }
+  &__item:nth-child(6){
+    &:before{.sprite(@icon-adv-fire);}
+  }
+  &__item:nth-child(7){
+    &:before{.sprite(@icon-adv-tree);}
+  }
+  &__item:nth-child(8){
+    &:before{
+      .sprite(@icon-adv-phone);
+      top: 0;
+    }
+  }
+  &__head{
+    .ffbold;
+    font-size: 20px;
+    line-height: 24px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+  &__text{
+    .ffnormal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,61 @@
+.promo{
+  background-image: url(../img/bg-promo-phone.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ffnormal;
+  color: @text-color;
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+
+  .container{
+    // position: relative;
+    padding-bottom: 120px;
+    &:before{
+      content: '';
+      width: 200px;
+      height: 287px;
+      background-image: url(../img/promo-pump-phone.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+  .logo-nibe{
+    position: absolute;
+    right: 20px;
+    bottom: -110px;
+    width: 150px;
+  }
+  &__block{
+    .col-12;
+    position: relative;
+  }
+  &__head{
+    margin: 0;
+    font-size: 22px;
+    line-height: 36px;
+    .ffbold;
+    text-transform: uppercase;
+  }
+  &__description{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__btn{
+    width: 220px;
+    background-color: @yellow-color;
+    font-size: 17px;
+    line-height: 24px;
+    display: inline-block;
+    .ffnormal;
+    padding: 10px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

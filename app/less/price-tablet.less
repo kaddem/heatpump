@@ -1,0 +1,116 @@
+.price{
+  background-color: @orange-color;
+  background-image: url(../img/bg-price.png);
+  background-repeat: repeat;
+  padding: 35px 0;
+  .ffbold;
+  text-align: center;
+
+  .range{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &__header{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__menu{
+    text-align: center;
+    font-size: 30px;
+  }
+  &__nav{
+    display: inline-block;
+    &-item{
+      display: inline-block;
+    }
+    a{
+      display: inline-block;
+      background-color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: #000;
+    }
+    .active{
+      color: @orange-color;
+    }
+  }
+  &__item{
+    .col-12;
+    padding: 0;
+    vertical-align: top;
+    background-color: #fff;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px -3px #000;
+  }
+  &__head{
+    font-size: 0;
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #326497;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+  &__square{
+    position: absolute;
+    line-height: 46px;
+    .fflite;
+    font-size: 30px;
+    color: #326497;
+    font-variant: small-caps;
+    right: 10px;
+    top: 10px;
+  }
+  &__description{
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+  &__price{
+    display: block;
+    font-size: 50px;
+    text-align: center;
+  }
+  &__text{
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__list{
+    list-style: none;
+    text-align: left;
+    &-item{
+      position: relative;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      .ffnormal;
+      &:before{
+        position: absolute;
+        left: 0;
+        top: 5px;
+        content: '';
+        display: block;
+        width: 13px;
+        height: 13px;
+        background-color: @orange-color;
+      }
+    }
+  }
+  &__btn{
+    background-color: @orange-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 265px;
+    padding: 17px;
+  }
+}

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Отопление дома под ключ</title>
+  <!-- build:css css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+  <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="bower_components/jquery-modal/jquery.modal.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css css/style.min.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="range">
+        <div class="logo">
+          <img src="img/logo-rosa-header.png" alt="РОСА Монтаж. Логотип компании">
+        </div>
+        <a class="menu-burger" href="#"></a>
+        <nav class="main-nav">
+          <a class="menu-back" href="#"></a>
+          <ul id="anchor-menu">
+            <li><a href="#price">Стоимость</a></li>
+            <li><a href="#services">Наши услуги</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#sertificate">Сертификаты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#map">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <a href="tel:+78127150506" class="phone">+7 (812) 715-05-06</a>
+          <button class="btn btn-recall" id="btn-recall">Заказать звонок</button>
+          <form action="#" class="form hidden-form" id="form_recall">
+            <h3 class="calculate__head">Заказ обратного звонка</h3>
+            <div class="form-row">
+              <input type="hidden" class="title" name="DATA[TITLE]" value="Форма - Заказ обратного звонка">
+            </div>
+            <div class="form-row">
+              <input type="text" class="form-name" name="name" placeholder="Имя">
+            </div>
+            <div class="form-row">
+              <input type="text" class="form-phone" name="phone" placeholder="Телефон">
+            </div>
+            <div class="form-row">
+              <input type="text" class="form-date" name="date" placeholder="Время звонка">
+            </div>
+            <button class="btn" name="enter">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="promo">
+      <div class="container">
+        <div class="range">
+          <div class="promo__block">
+            <h1 class="promo__head">Системы отопления c тепловыми насосами Nibe</h1>
+            <p class="promo__description">Проектирование, поставка и монтаж оборудования для систем отопления любых типов</p>
+            <button class="btn promo__btn">Получить консультацию</button>
+            <form action="#" class="form hidden-form" id="form_consult">
+              <h3 class="calculate__head form-head">Оставьте свои контакты и наш инженер свяжется с вами</h3>
+              <input type="hidden" class="title" name="DATA[TITLE]" value="Форма - Получить консультацию">
+              <div class="form-row">
+                <input type="text" class="form-name" name="name" placeholder="Имя">
+              </div>
+              <div class="form-row">
+                <input type="text" class="form-email" name="email" placeholder="E-mail">
+              </div>
+              <div class="form-row">
+                <input type="text" class="form-phone" name="phone" placeholder="Телефон">
+              </div>
+              <button class="btn" name="enter">Получить расчет</button>
+            </form>
+            <img class="logo-nibe" src="img/logo-nibe.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="container">
+        <div class="range">
+          <div class="action__promo">
+            <p><strong>Акция</strong> до конца мая</p>
+          </div>
+          <div class="action__description">
+            <p>При заказе системы отопления, монтаж теплого пола со скидкой - <b>300р/м.кв</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price">
+      <div class="container">
+        <h2 class="price__header" id="price">Стоимость систем отопления под ключ</h2>
+        <div class="price__menu">
+          <span>Выберите площадь(м./кв.):</span>
+          <ul class="price__nav">
+            <li class="price__nav-item"><a href="#" class="nav__onezerro active">100</a></li>
+            <li class="price__nav-item"><a href="#" class="nav__twozerro">200</a></li>
+            <li class="price__nav-item"><a href="#" class="nav__threezerro">300</a></li>
+          </ul>
+        </div>
+        <div class="range table-row price__onezerro">
+          <div class="price__item">
+            <h3 class="price__head">С воздушным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">667556 &#8381;</strong>
+              <span class="price__square">100 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке воздушного теплового насоса, смесительного узла, колектора теплого пола, системы теплых полов 52 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 4 радиаторов, труб системы отопления</li>
+                <li class="price__list-item">Воздушный тепловой насос Nibe Split 3-8кВт,  смесительный узел, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 4 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+          <div class="price__item">
+            <h3 class="price__head">С геотермальным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">805307 &#8381;</strong>
+              <span class="price__square">100 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке геотермального теплового насоса, смесительного узла, колектора теплого пола, системы теплых полов 52 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 4 радиаторов, труб системы отопления.</li>
+                <li class="price__list-item">Геотермальный тепловой насос Nibe F1255-6 R,  смесительный узел, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 4 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+        </div>
+        <div class="range table-row price__twozerro">
+          <div class="price__item">
+            <h3 class="price__head">С воздушным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">858750 &#8381;</strong>
+              <span class="price__square">200 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке воздушного теплового насоса, смесительного узла, колектора теплого пола, системы теплых полов 97 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 8 радиаторов, труб системы отопления</li>
+                <li class="price__list-item">Воздушный тепловой насос Nibe Split 3-12кВт,  смесительный узел, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 8 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+          <div class="price__item">
+            <h3 class="price__head">С геотермальным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">1 018516 &#8381;</strong>
+              <span class="price__square">200 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке геотермального теплового насоса, смесительного узла, колектора теплого пола, системы теплых полов 97 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 8 радиаторов, труб системы отопления.</li>
+                <li class="price__list-item">Геотермальный тепловой насос Nibe F1255-12 R,  смесительный узел, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 8 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+        </div>
+        <div class="range table-row price__threezerro">
+          <div class="price__item">
+            <h3 class="price__head">С воздушным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">1 434550 &#8381;</strong>
+              <span class="price__square">300 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке воздушного теплового насоса, 3 смесительных узлов, распределительного коллектора, гидравлического разделителя, колектора теплого пола, системы теплых полов 149 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 16 радиаторов, труб системы отопления</li>
+                <li class="price__list-item">Воздушный тепловой насос Nibe F2040-16,бак водонагреватель с контроллером, смесительные узлы Meibes, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 16 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+          <div class="price__item">
+            <h3 class="price__head">С геотермальным тепловым насосом</h3>
+            <div class="price__description">
+              <strong class="price__price">1 561608 &#8381;</strong>
+              <span class="price__square">300 м./кв.</span>
+              <p class="price__text">В стоимость входит</p>
+              <ul class="price__list">
+                <li class="price__list-item">Монтажные работы по установке и обвязке геотермального теплового насоса, 3 смесительных узлов, распределительного коллектора, гидравлического разделителя, колектора теплого пола, системы теплых полов 149 м кв, автоматики управления для теплого пола и радиаторов, коллектора радиатороного, 16 радиаторов, труб системы отопления.</li>
+                <li class="price__list-item">Геотермальный тепловой насос Nibe F1255-16 R,  смесительные узлы Meibes, коллектор теплого пола, коллектор радиаторный,  стальные радиаторы Kermi 16 шт, автоматика управления теплым полом и радиаторами.</li>
+                <li class="price__list-item">Трубы для теплого пола РЕХ, металлопластиковые трубы, краны, фитинги, крепеж.</li>
+              </ul>
+            </div>
+            <button class="btn price__btn">Заказать отопление</button>
+          </div>
+        </div>
+        <form action="#" class="form hidden-form" id="form_price">
+          <h3 class="calculate__head form-head">Отправте заявку на монтаж отопления</h3>
+          <input type="hidden" class="title" name="DATA[TITLE]" value="Заявка с формы Расчет предварительной стоимости">
+          <div class="form-row">
+            <input type="text" class="form-name" name="name" placeholder="Имя">
+          </div>
+          <div class="form-row">
+            <input type="text" class="form-email" name="email" placeholder="E-mail">
+          </div>
+          <div class="form-row">
+            <input type="text" class="form-phone" name="phone" placeholder="Телефон">
+          </div>
+          <button class="btn" name="enter">Получить расчет</button>
+        </form>
+        <!-- <div class="range">
+
+        </div> -->
+      </div>
+    </div>
+    <div class="pay">
+      <div class="container">
+        <div class="pay__bg">
+          <h3 class="pay__head">Варианты оплаты:</h3>
+          <ul class="pay__list">
+            <li class="pay__item pay--nomoney">Безналичный расчет.</li>
+            <li class="pay__item pay--purse">Наличными через кассу.</li>
+            <li class="pay__item pay--card">Банковской картой в офисе.</li>
+            <li class="pay__item pay--percent">В кредит</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="container">
+        <h2 class="step__header">Этапы выполнения работ</h2>
+        <ul class="step__list step__list--line">
+          <li class="step__item">
+            <h4 class="step__head">Обращение.</h4>
+            <p class="step__text">Вы оставляете заявку на сайте и наш инженер связывается с вами.</p>
+          </li>
+          <li class="step__item">
+            <h4 class="step__head">Расчет системы отопления.</h4>
+            <p class="step__text">Вы присылаете планы дома и наши инженеры рассчитывают систему отопления, подготавливают коммерческое предложение.</p>
+          </li>
+          <li class="step__item">
+            <h4 class="step__head">Согласование.</h4>
+            <p class="step__text">Наш инженер выезжает на объект. Уточняет детали. Подготавливает смету.</p>
+          </li>
+        </ul>
+        <ul class="step__list">
+          <li class="step__item">
+            <h4 class="step__head">Заключение договора.</h4>
+            <p class="step__text">Определяются сроки выполнения монтажных работ. Вы вносите предоплату на оборудование и материалы.</p>
+          </li>
+          <li class="step__item">
+            <h4 class="step__head">Монтаж.</h4>
+            <p class="step__text">Наши специалисты выполняют монтаж системы отопления у вас на объекте.</p>
+          </li>
+          <li class="step__item">
+            <h4 class="step__head">Сдача объекта.</h4>
+            <p class="step__text">Вы принимаете работы. Подписывается акт выполненных работ. Производиться окончательный расчет по договору.тавливает.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <h2 class="services__header" id="services">Наши услуги</h2>
+        <ul class="services__nav">
+          <li class="services__nav-item"><a id="link-heatsys" class="active" href="#">Системы отопления</a></li>
+          <li class="services__nav-item"><a id="link-boilerbox" href="#">Монтаж котельной</a></li>
+          <li class="services__nav-item"><a id="link-boiler" href="#">Отопительные котлы</a></li>
+          <li class="services__nav-item"><a id="link-water" href="#">Водоснабжение</a></li>
+          <li class="services__nav-item"><a id="link-stock" href="#">Канализация</a></li>
+          <li class="services__nav-item"><a id="link-autogaz" href="#">Автономная газификация</a></li>
+          <li class="services__nav-item"><a id="link-heatpump" href="#">Тепловые насосы</a></li>
+        </ul>
+        <div class="range">
+          <div class="services__description" id="heatsys">
+            <div class="services__text">
+              <p>Система отопления – это уютный семейный очаг круглый год:</p>
+              <ul>
+                <li>индивидуальное проектирование;</li>
+                <li>монтаж необходимого оборудования (котла, радиаторов, теплого пола);</li>
+                <li>сервисное обслуживание;</li>
+                <li>гарантия качества.</li>
+              </ul>
+              <p>Соблюдение всех строительных норм, грамотное проектирование и монтаж, правильный подбор оборудования – все это исключительно важно для Вашей жизни, безопасности и результативной работы отопительной системы. Самостоятельные попытки монтажа и помощь разнорабочих (работников широкого профиля) в любой ситуации категорически не приветствуются и ни к чему хорошему не приведут.</p>
+              <p>Профессиональные расчеты, выбор системы отопления относительно всех нюансов квартиры или дома – и Вы получаете теплое, комфортное и уютное жилье. Для нашей компании главным принципом всегда остается высокое качество услуг. И необязательно переплачивать огромные деньги за бренд – мы работаем с хорошо зарекомендовавшими себя поставщиками и популярными производителями. Вы должны знать, что хорошая цена и отличный результат – вполне совместимые понятия.</p>
+              <p>Все подготовительные работы, проектирование, подбор системы отопления и монтаж мы выполним идеально!</p>
+            </div>
+          </div>
+          <div class="services__description" id="boilerbox">
+            <div class="services__text">
+              <p>Монтаж котельной – сложнейший технологический процесс, доверяемый исключительно профессионалам. Неправильно подобранное оборудование, нюансы помещения, сложности с прокладкой сетей – все это может повлиять впоследствии на энергоэффективность и безопасность дома.</p>
+              <p>Наша компания реализует все требуемые для сети виды работ, подразумевающие создание котельной, имеющей полностью индивидуальную планировку и технические решения.</p>
+              <p>Мы предоставляем такие услуги:</p>
+              <ul>
+                <li>расчет мощности отопительного оборудования и площади отапливаемых помещений;</li>
+                <li>выбор и проектирование помещения с подробным проектом расположения котельной;</li>
+                <li>подвод и разветвление коммуникационных сетей и монтажного оборудования;</li>
+                <li>прокладка радиаторов;</li>
+                <li>монтаж котла и бойлера;</li>
+                <li>установка насосной группы;</li>
+                <li>вывод дымохода и его составляющих частей. </li>
+              </ul>
+              <p>Мы учитываем все строительные нормы и требования, выдвигаемые к монтажу котельной, осуществляем все работы с максимальной точностью и гарантируем высокое качество осуществляемых услуг. Приобретая отопительное оборудование и всевозможные комплектующие в нашей компании, вы получаете гарантию и на услуги, и на приобретенную продукцию.</p>
+            </div>
+          </div>
+          <div class="services__description" id="boiler">
+            <div class="services__text">
+              <p>Отопительные котлы снабжены всеми необходимыми преимуществами, которые позволили им на сегодняшний день стать наиболее востребованным оборудованием среди владельцев частных домовладений, квартир и небольших промобъектов.</p>
+              <p>Наша компания занимается установкой таких видов котлов:</p>
+              <ul>
+                <li>газовые</li>
+                <li>электрические;</li>
+                <li>дизельные;</li>
+                <li>твердотопливные</li>
+              </ul>
+              <p>Самостоятельно выбирать отопительный котел не стоит, так как это чревато последствиями: недостаточная мощность, отсутствие требуемого топлива, особенности помещения. Мы оказываем полный перечень услуг, сервиса, направленного на выбор котла в соответствии с особенными предпочтениями и бюджетными возможностями отдельно взятого заказчика. Наши сотрудники выполнят все необходимые замеры, подскажут, какое именно оборудование нужно установить, насколько эффективным будет отопительный котел. Также мы предлагаем огромный выбор агрегатов для отопления, изготовленных в РФ и Европе, по минимальным ценам. Сотрудничество с ведущими брендами в этой области дает возможность предложить уникальные варианты с приемлемыми ценниками.</p>
+              <p>Монтаж оборудования, электротехнические, пусконаладочные работы, заказанные в нашей компании, обеспечивают каждому клиенту долгосрочную гарантию и качественное сервисное обслуживание.</p>
+            </div>
+          </div>
+          <div class="services__description" id="water">
+            <div class="services__text">
+              <p>При обустройстве высококачественной системы водоснабжения важно грамотно просчитать и расположить трубопровод так, чтобы никаких последствий и неприятных ситуаций в процессе эксплуатации не возникло.</p>
+              <p>Наша компания выполняет:</p>
+              <ul>
+                <li>внутренние и наружные работы;</li>
+                <li>обустройство скважин;</li>
+                <li>разводку труб от того места, где находится источник водоснабжения;</li>
+                <li>подключение к сантехнике и всем точкам водоснабжения в доме;</li>
+                <li>наладку всех систем и многие другие работы, обеспечивающие бесперебойное поступление воды.</li>
+              </ul>
+              <p>Самостоятельное вмешательство в систему водоснабжения, попытки проектирования и разводки могут привести к весьма печальным последствиям. Прорыв труб, недостаточный напор воды, отсутствие водоснабжения на потребительских отдельных точках (ванна, туалет) – все это может случиться при непрофессиональном вмешательстве.</p>
+              <p>Сотрудники нашей компании не только осуществят непосредственный монтаж всех агрегатов и комплектующих, но и подберут все необходимые материалы с учетом выделенного бюджета, составить подробную смету и доставить оборудование и расходные материалы на объект.</p>
+            </div>
+          </div>
+          <div class="services__description" id="stock">
+            <div class="services__text">
+              <p>Выполняя работы по установке систем водоотведения, необходимо понимать, что только правильно подготовленный проект, разводка трубопровода и монтаж сети позволят обеспечить эффективную работу канализации на протяжении долгих лет.</p>
+              <p>Наша компания выполняет широкий спектр услуг, которые включают в себя выполнение внутренних и наружных работ, установку локальных очистных станций. К таким работам относятся:</p>
+              <ul>
+                <li>монтаж канализационных сетей с установкой стояков и герметизацией стыков;</li>
+                <li>прокладка отводных труб и выпусков;</li>
+                <li>подключение сантехнического оборудования к системе;</li>
+                <li>создание выгребной ямы, очистной станции;</li>
+                <li>прокладка трубопровода в земле;</li>
+                <li>проектирование и разводка оборудования и отдельных комплектующих.</li>
+              </ul>
+              <p>Правильный расчет, грамотное выполнение поставленных задач, качественно подобранные материалы и оборудование – это залог долгосрочной эксплуатации канализационной системы. Наши специалисты не только подскажут, сколько необходимо материалов для создания системы водоотведения, но и помогут с их выбором и покупкой. Мы сотрудничаем с лучшими в этой области производителями, поэтому может предложить качественную продукцию по минимальной цене.</p>
+            </div>
+          </div>
+          <div class="services__description" id="autogaz">
+            <div class="services__text">
+              <p>Наиболее выгодным вариантом отопления и газификации загородного дома является система с независимой газификацией. Она представляет собой автономную сеть, которая может устанавливаться в тех местах, где нет магистрального газопровода. Использование подобной системы: отопление всей площади дома, приготовление пищи, водоснабжение горячей водой.</p>
+              <p>Автономная газификация реализуется путем установки частной системы газоснабжения, проводимой сжиженным углеводородным газом. Нашими специалистами на частном участке устанавливается подземный резервуар (газгольдер), а от него прокладывается газопровод, ведущий в газифицируемые места. Обычно расход в зависимости от потребностей владельцев помещения будет требовать 1-3 закачек в год.</p>
+              <p>Мы выполняем монтаж автономной системы газификации в соответствии со всеми нормами и правилами, предъявляемыми к такому виду работ. В большинстве случаев на весь комплекс мероприятий уходит не более нескольких дней, а себестоимость конечного потребления обойдется в несколько раз дешевле, чем отопление другими видами систем. Сюда входит:</p>
+              <ul>
+                <li>монтаж емкости на достаточной глубине;</li>
+                <li>подсоединение и разводка труб по участку;</li>
+                <li>создание сети трубопровода внутри дома и подключение оборудования.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__description" id="heatpump">
+            <div class="services__text">
+              <p>Мы осуществляем полный цикл поставки, пусконаладочных и монтажных работ, направленных на ввод в действие тепловых насосов. Они используют энергию, которая присутствует в атмосфере, водных ресурсах, в верхних слоях почвы с преобразованием в тепловую энергию с высокой отдачей – первоисточником может быть любой тип энергии.</p>
+              <p>Мы выполняем такие виды работ:</p>
+              <ul>
+                <li>подбор оптимального монтажного решения для отдельного дома, коттеджа с учетом всех нюансов и наличия первоисточника энергии;</li>
+                <li>разработка и сопряжение первичного источника с тепловым оборудованием;</li>
+                <li>выбор, поставка и монтаж насосных агрегатов, которые будут соответствовать теплопотерям помещения, агрегатам систем отопления, индивидуальным запросам отдельных заказчиков.</li>
+              </ul>
+              <p>Тепловые насосы имеют массу достоинств. Они безопасны, экологичны, экономичны, применяются даже там, где электрическая мощность не достигает  2-3 кВт. Работают такие агрегаты по принципу холодильника, но только с тем отличием, что холодильник выкачивает тело, а тепловой насос – закачивает его внутрь. При затратах привода в 1 кВт потребители получают до 3-4 кВт энергии на выходе.</p>
+              <p>Все работы осуществляются профессионально, а сотрудничество с производителями оборудования позволяет предложить заказчикам оптимальные ценники.</p>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gallery__block" id="img-heatsys">
+              <div class="gallery__item">
+                <img src="img/heatsys_7.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatsys_5.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatsys_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatsys_4.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__block" id="img-boilerbox">
+              <div class="gallery__item">
+                <img src="img/boilerroom_1.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boilerroom_2.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boilerroom_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boilerroom_4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="gallery__block" id="img-boiler">
+              <div class="gallery__item">
+                <img src="img/boiler_1.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boiler_2.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boiler_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/boiler_4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="gallery__block" id="img-water">
+              <div class="gallery__item">
+                <img src="img/water_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/water_1.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/water_2.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/water_4.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__block" id="img-stock">
+              <div class="gallery__item">
+                <img src="img/stock_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/stock_4.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/stock_5.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/stock_6.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__block" id="img-autogaz">
+              <div class="gallery__item">
+                <img src="img/gaz_2.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/gaz_5.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/gaz_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/gaz_1.jpg" alt="">
+              </div>
+            </div>
+            <div class="gallery__block" id="img-heatpump">
+              <div class="gallery__item">
+                <img src="img/heatpump_1.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatpump_2.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatpump_3.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/heatpump_4.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="services__form">
+            <form action="" class="form" id="form-services">
+              <span class="form__head">Вызовите инженера на объект</span>
+              <input type="hidden" class="title" name="DATA[TITLE]" value="Заявка с формы Наши услуги">
+              <div class="form-row">
+                <input type="text" class="form__input form-name" name="name" placeholder="Имя">
+              </div>
+              <div class="form-row">
+                <input type="text" class="form__input form-phone" name="phone" placeholder="телефон">
+              </div>
+              <div class="form-row">
+                <input type="text" class="form__input form-email" name="email" placeholder="e-mail">
+              </div>
+              <button class="btn services__btn">Вызвать инженера</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages">
+      <div class="container">
+        <h2 class="advantages__header" id="advantages">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__head">Сберечь свои силы, нервы и время</h3>
+            <p class="advantages__text">Тепловой насос после установки сразу готов к работе, не требует согласований в госслужбах</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Получить надежность оборудования</h3>
+            <p class="advantages__text">Срок службы компрессора может достигать 125 000 часов - что составляет 50 лет и более;</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Экономить от 30 000 р. ежегодно</h3>
+            <p class="advantages__text">До 80% энергии, необходимой для обогрева дома, вы получаете бесплатно; вам не потребуется строительства дымохода и котельной</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Сохранить тишину <br> в доме</h3>
+            <p class="advantages__text">Уровень звукового давления при работе от 31 дБ. Оборудование работает не громче холодильника</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Сохранить полезную площадь дома</h3>
+            <p class="advantages__text">Тепловые насосы устанавливаются вне дома, горячая вода для обогрева и бытовых нужд поступает по теплоизоляционным трубкам</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Избавиться от опасности возгорания дома</h3>
+            <p class="advantages__text">Отсутствуют процессы горения, нет емкостей для хранения топлива</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Сберечь природные ресурсы</h3>
+            <p class="advantages__text">И защитить атмосферу от выбросов: 0% вредных выбросов</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__head">Просто управлять комфортом в доме</h3>
+            <p class="advantages__text">русифицированное меню, возможность дистанционного контроля и управления.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sertificate" id="sertificate">
+      <div class="container">
+        <h2 class="sertificate__header">Наши сертификаты</h2>
+          <div class="sertificate__gallery" id="owl-sertificate">
+
+            <div class="sertificate__item">
+              <img src="img/sertificate/Nibe_Sol.jpg" alt="sertificate" class="sertificate__img">
+            </div>
+            <div class="sertificate__item">
+              <img src="img/sertificate/Nibe_Koz.jpg" alt="sertificate" class="sertificate__img">
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="reviews" >
+      <div class="container">
+        <h2 class="reviews__header" id="reviews">Отзывы</h2>
+        <div class="range">
+          <ul class="reviews__list owl-carousel" id="owl-reviews">
+            <li class="reviews__item">
+              <div class="img-skin"><img src="img/reviews_eugeniy.jpg" alt="Фотография Евгения для отзыва об установке водяного теплого пола"></div>
+              <blockquote class="reviews__text">
+                <cite class="reviews__name">Евгений</cite>
+                Обратился в компанию для монтажа и проектирования теплых полов. Работы были выполнены в строго поставленные сроки и предельно качественно. Очень благодарен специалистам компании «РОСА Монтаж»!
+              </blockquote>
+            </li>
+            <li class="reviews__item">
+              <div class="img-skin"><img src="img/reviews_elena.jpg" alt="Фотография Елены для отзыва об установке водяного теплого пола"></div>
+              <blockquote class="reviews__text">
+                <cite class="reviews__name">Елена</cite>
+                Очень долго искала подходящую компанию для установки теплых полов в моем доме. Знакомый посоветовал компанию «РОСА Монтаж». При сотрудничестве нисколько не пожалела, все было сделано так, как я хотела
+              </blockquote>
+            </li>
+            <li class="reviews__item">
+              <div class="img-skin"><img src="img/reviews_constantin.jpg" alt="Фотография Константина для отзыва об установке водяного теплого пола"></div>
+              <blockquote class="reviews__text">
+                <cite class="reviews__name">Константин</cite>
+                Разослал сведения о доме в кучу разных компаний для проекта. Никто не предоставил ничего путного. В компании «РОСА Монтаж» мы нашли индивидуальный подход к своему дому, как и хотели. Спасибо профессионалам!
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map"></div>
+    <div class="question">
+      <div class="container">
+        <form action="#" class="form form-question" id="form-question">
+          <span class="form-question__head">Остались вопросы ? напишите нам</span>
+          <input type="hidden" class="title" name="DATA[TITLE]" value="Форма - Остались вопросы?">
+          <div class="form-row">
+            <input type="text" class="form-email" name="email" placeholder="E-mail">
+          </div>
+          <div class="form-row">
+            <textarea class="form-text" name="text" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="btn question__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="range">
+        <div class="logo-footer">
+          <img src="img/logo-rosa-footer.png" alt="РОСА Монтаж. Логотип">
+        </div>
+        <ul class="contacts">
+          <li>
+            <a class="phone" href="tel:+78127150506">+7 (812) 715-05-06</a>
+          </li>
+          <li>
+            <a class="mail" href="mailto:order@rosa-montazh.ru">order@rosa-montazh.ru</a>
+          </li>
+          <li>
+            <a class="adress" href="">г. Санкт-Петербург, Бухарестская улица, д. 24</a>
+          </li>
+        </ul>
+        <div class="copypast">
+          <span>РОСА Монтаж 2016 ©</span>
+          <span>Разработка: <a class="webstudia" href="http://neststudio.ru/">nest</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="thank-you">
+  </div>
+  <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDRQVjTZq6DH0X8LwFzLIvXJqAWW5kiCo&signed_in=true&callback=initMap">
+  </script>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: {lat: 59.8863, lng: 30.365594},
+        scrollwheel: false
+      });
+
+      var image = 'img/icon-rosa-map.png';
+      var beachMarker = new google.maps.Marker({
+        position: {lat: 59.8863, lng: 30.365594},
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <!-- build:js js/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+  <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="bower_components/jquery-modal/jquery.modal.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js js/main.min.js -->
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

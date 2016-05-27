@@ -1,0 +1,72 @@
+.pay{
+  background-color: @text-color;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #fff;
+  &__bg{
+    border: 3px solid #fff;
+    position: relative;
+  }
+  &__head{
+    .ffbold;
+    font-size: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 380px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    background-color: @text-color;
+  }
+  &__list{
+    .range;
+    font-size: 0;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  &__item{
+    .col-6;
+    float: none;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    .ffnormal;
+    padding-left: 130px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 70px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  &--nomoney{
+    &:before{
+      .sprite(@icon-pay-nomoney);
+    }
+  }
+  &--purse{
+    &:before{
+      .sprite(@icon-pay-purse);
+    }
+  }
+  &--card{
+    &:before{
+      .sprite(@icon-pay-card);
+    }
+  }
+  &--percent{
+    &:before{
+      .sprite(@icon-pay-percent);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.advantages{
+  // padding-top: 100px;
+  color: @text-color;
+  text-align: center;
+  &__header{
+    .ffbold;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+  }
+  &__list{
+    .range;
+    list-style: none;
+    font-size: 0;
+  }
+  &__item{
+    .col-12;
+    text-align: left;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 75px;
+    &:before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 5px;
+    }
+  }
+  &__item:nth-child(1){
+    &:before{
+      .sprite(@icon-adv-battery-phone);
+      left: 20px;
+    }
+  }
+  &__item:nth-child(2){
+    &:before{
+      .sprite(@icon-adv-shield-phone);
+      left: 15px;
+    }
+  }
+  &__item:nth-child(3){
+    &:before{
+      .sprite(@icon-adv-pig-phone);
+      left: 5px;
+    }
+  }
+  &__item:nth-child(4){
+    &:before{
+      .sprite(@icon-adv-mute-phone);
+      left: 15px;
+    }
+  }
+  &__item:nth-child(5){
+    &:before{
+      .sprite(@icon-adv-tape-phone);
+      left: 10px;
+    }
+  }
+  &__item:nth-child(6){
+    &:before{
+      .sprite(@icon-adv-fire-phone);
+      left: 15px;
+    }
+  }
+  &__item:nth-child(7){
+    &:before{
+      .sprite(@icon-adv-tree-phone);
+      left: 15px;
+    }
+  }
+  &__item:nth-child(8){
+    &:before{
+      .sprite(@icon-adv-phone-phone);
+      left: 20px;
+    }
+  }
+  &__head{
+    .ffbold;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  &__text{
+    .ffnormal;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0;
+  }
+}

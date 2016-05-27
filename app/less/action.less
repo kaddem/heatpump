@@ -1,0 +1,48 @@
+.action{
+  color: @orange-color;
+  padding: 20px 0;
+
+  &__promo{
+    .col-5;
+    float: none;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+
+    p{
+      font-size: 36px;
+      margin: 0;
+      padding-left: 140px;
+      &:before{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50px;
+      margin: auto;
+      content: '';
+      display: block;
+      .sprite(@icon-action);
+    }
+    }
+    strong{
+      font-size: 70px;
+      line-height: 70px;
+      display: block;
+    }
+  }
+  &__description{
+    .col-7;
+    float: none;
+    display: table-cell;
+    font-size: 36px;
+    vertical-align: middle;
+
+    p{
+      margin: 0;
+      .fflite;
+      b{
+        .ffbold;
+      }
+    }
+  }
+}

@@ -1,0 +1,458 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-action-name: 'icon-action';
+@icon-action-x: 0px;
+@icon-action-y: 0px;
+@icon-action-offset-x: 0px;
+@icon-action-offset-y: 0px;
+@icon-action-width: 88px;
+@icon-action-height: 102px;
+@icon-action-total-width: 374px;
+@icon-action-total-height: 302px;
+@icon-action-image: '../img/sprite.png';
+@icon-action: 0px 0px 0px 0px 88px 102px 374px 302px '../img/sprite.png' 'icon-action';
+@icon-adv-battery-phone-name: 'icon-adv-battery-phone';
+@icon-adv-battery-phone-x: 335px;
+@icon-adv-battery-phone-y: 131px;
+@icon-adv-battery-phone-offset-x: -335px;
+@icon-adv-battery-phone-offset-y: -131px;
+@icon-adv-battery-phone-width: 26px;
+@icon-adv-battery-phone-height: 46px;
+@icon-adv-battery-phone-total-width: 374px;
+@icon-adv-battery-phone-total-height: 302px;
+@icon-adv-battery-phone-image: '../img/sprite.png';
+@icon-adv-battery-phone: 335px 131px -335px -131px 26px 46px 374px 302px '../img/sprite.png' 'icon-adv-battery-phone';
+@icon-adv-battery-name: 'icon-adv-battery';
+@icon-adv-battery-x: 266px;
+@icon-adv-battery-y: 162px;
+@icon-adv-battery-offset-x: -266px;
+@icon-adv-battery-offset-y: -162px;
+@icon-adv-battery-width: 44px;
+@icon-adv-battery-height: 75px;
+@icon-adv-battery-total-width: 374px;
+@icon-adv-battery-total-height: 302px;
+@icon-adv-battery-image: '../img/sprite.png';
+@icon-adv-battery: 266px 162px -266px -162px 44px 75px 374px 302px '../img/sprite.png' 'icon-adv-battery';
+@icon-adv-fire-phone-name: 'icon-adv-fire-phone';
+@icon-adv-fire-phone-x: 0px;
+@icon-adv-fire-phone-y: 255px;
+@icon-adv-fire-phone-offset-x: 0px;
+@icon-adv-fire-phone-offset-y: -255px;
+@icon-adv-fire-phone-width: 38px;
+@icon-adv-fire-phone-height: 47px;
+@icon-adv-fire-phone-total-width: 374px;
+@icon-adv-fire-phone-total-height: 302px;
+@icon-adv-fire-phone-image: '../img/sprite.png';
+@icon-adv-fire-phone: 0px 255px 0px -255px 38px 47px 374px 302px '../img/sprite.png' 'icon-adv-fire-phone';
+@icon-adv-fire-name: 'icon-adv-fire';
+@icon-adv-fire-x: 0px;
+@icon-adv-fire-y: 169px;
+@icon-adv-fire-offset-x: 0px;
+@icon-adv-fire-offset-y: -169px;
+@icon-adv-fire-width: 69px;
+@icon-adv-fire-height: 86px;
+@icon-adv-fire-total-width: 374px;
+@icon-adv-fire-total-height: 302px;
+@icon-adv-fire-image: '../img/sprite.png';
+@icon-adv-fire: 0px 169px 0px -169px 69px 86px 374px 302px '../img/sprite.png' 'icon-adv-fire';
+@icon-adv-mute-phone-name: 'icon-adv-mute-phone';
+@icon-adv-mute-phone-x: 38px;
+@icon-adv-mute-phone-y: 255px;
+@icon-adv-mute-phone-offset-x: -38px;
+@icon-adv-mute-phone-offset-y: -255px;
+@icon-adv-mute-phone-width: 45px;
+@icon-adv-mute-phone-height: 39px;
+@icon-adv-mute-phone-total-width: 374px;
+@icon-adv-mute-phone-total-height: 302px;
+@icon-adv-mute-phone-image: '../img/sprite.png';
+@icon-adv-mute-phone: 38px 255px -38px -255px 45px 39px 374px 302px '../img/sprite.png' 'icon-adv-mute-phone';
+@icon-adv-mute-name: 'icon-adv-mute';
+@icon-adv-mute-x: 69px;
+@icon-adv-mute-y: 169px;
+@icon-adv-mute-offset-x: -69px;
+@icon-adv-mute-offset-y: -169px;
+@icon-adv-mute-width: 80px;
+@icon-adv-mute-height: 70px;
+@icon-adv-mute-total-width: 374px;
+@icon-adv-mute-total-height: 302px;
+@icon-adv-mute-image: '../img/sprite.png';
+@icon-adv-mute: 69px 169px -69px -169px 80px 70px 374px 302px '../img/sprite.png' 'icon-adv-mute';
+@icon-adv-phone-phone-name: 'icon-adv-phone-phone';
+@icon-adv-phone-phone-x: 335px;
+@icon-adv-phone-phone-y: 42px;
+@icon-adv-phone-phone-offset-x: -335px;
+@icon-adv-phone-phone-offset-y: -42px;
+@icon-adv-phone-phone-width: 25px;
+@icon-adv-phone-phone-height: 53px;
+@icon-adv-phone-phone-total-width: 374px;
+@icon-adv-phone-phone-total-height: 302px;
+@icon-adv-phone-phone-image: '../img/sprite.png';
+@icon-adv-phone-phone: 335px 42px -335px -42px 25px 53px 374px 302px '../img/sprite.png' 'icon-adv-phone-phone';
+@icon-adv-phone-name: 'icon-adv-phone';
+@icon-adv-phone-x: 266px;
+@icon-adv-phone-y: 73px;
+@icon-adv-phone-offset-x: -266px;
+@icon-adv-phone-offset-y: -73px;
+@icon-adv-phone-width: 42px;
+@icon-adv-phone-height: 89px;
+@icon-adv-phone-total-width: 374px;
+@icon-adv-phone-total-height: 302px;
+@icon-adv-phone-image: '../img/sprite.png';
+@icon-adv-phone: 266px 73px -266px -73px 42px 89px 374px 302px '../img/sprite.png' 'icon-adv-phone';
+@icon-adv-pig-phone-name: 'icon-adv-pig-phone';
+@icon-adv-pig-phone-x: 96px;
+@icon-adv-pig-phone-y: 102px;
+@icon-adv-pig-phone-offset-x: -96px;
+@icon-adv-pig-phone-offset-y: -102px;
+@icon-adv-pig-phone-width: 53px;
+@icon-adv-pig-phone-height: 38px;
+@icon-adv-pig-phone-total-width: 374px;
+@icon-adv-pig-phone-total-height: 302px;
+@icon-adv-pig-phone-image: '../img/sprite.png';
+@icon-adv-pig-phone: 96px 102px -96px -102px 53px 38px 374px 302px '../img/sprite.png' 'icon-adv-pig-phone';
+@icon-adv-pig-name: 'icon-adv-pig';
+@icon-adv-pig-x: 88px;
+@icon-adv-pig-y: 0px;
+@icon-adv-pig-offset-x: -88px;
+@icon-adv-pig-offset-y: 0px;
+@icon-adv-pig-width: 103px;
+@icon-adv-pig-height: 74px;
+@icon-adv-pig-total-width: 374px;
+@icon-adv-pig-total-height: 302px;
+@icon-adv-pig-image: '../img/sprite.png';
+@icon-adv-pig: 88px 0px -88px 0px 103px 74px 374px 302px '../img/sprite.png' 'icon-adv-pig';
+@icon-adv-shield-phone-name: 'icon-adv-shield-phone';
+@icon-adv-shield-phone-x: 335px;
+@icon-adv-shield-phone-y: 0px;
+@icon-adv-shield-phone-offset-x: -335px;
+@icon-adv-shield-phone-offset-y: 0px;
+@icon-adv-shield-phone-width: 39px;
+@icon-adv-shield-phone-height: 42px;
+@icon-adv-shield-phone-total-width: 374px;
+@icon-adv-shield-phone-total-height: 302px;
+@icon-adv-shield-phone-image: '../img/sprite.png';
+@icon-adv-shield-phone: 335px 0px -335px 0px 39px 42px 374px 302px '../img/sprite.png' 'icon-adv-shield-phone';
+@icon-adv-shield-name: 'icon-adv-shield';
+@icon-adv-shield-x: 266px;
+@icon-adv-shield-y: 0px;
+@icon-adv-shield-offset-x: -266px;
+@icon-adv-shield-offset-y: 0px;
+@icon-adv-shield-width: 69px;
+@icon-adv-shield-height: 73px;
+@icon-adv-shield-total-width: 374px;
+@icon-adv-shield-total-height: 302px;
+@icon-adv-shield-image: '../img/sprite.png';
+@icon-adv-shield: 266px 0px -266px 0px 69px 73px 374px 302px '../img/sprite.png' 'icon-adv-shield';
+@icon-adv-tape-phone-name: 'icon-adv-tape-phone';
+@icon-adv-tape-phone-x: 135px;
+@icon-adv-tape-phone-y: 255px;
+@icon-adv-tape-phone-offset-x: -135px;
+@icon-adv-tape-phone-offset-y: -255px;
+@icon-adv-tape-phone-width: 46px;
+@icon-adv-tape-phone-height: 32px;
+@icon-adv-tape-phone-total-width: 374px;
+@icon-adv-tape-phone-total-height: 302px;
+@icon-adv-tape-phone-image: '../img/sprite.png';
+@icon-adv-tape-phone: 135px 255px -135px -255px 46px 32px 374px 302px '../img/sprite.png' 'icon-adv-tape-phone';
+@icon-adv-tape-name: 'icon-adv-tape';
+@icon-adv-tape-x: 0px;
+@icon-adv-tape-y: 102px;
+@icon-adv-tape-offset-x: 0px;
+@icon-adv-tape-offset-y: -102px;
+@icon-adv-tape-width: 96px;
+@icon-adv-tape-height: 67px;
+@icon-adv-tape-total-width: 374px;
+@icon-adv-tape-total-height: 302px;
+@icon-adv-tape-image: '../img/sprite.png';
+@icon-adv-tape: 0px 102px 0px -102px 96px 67px 374px 302px '../img/sprite.png' 'icon-adv-tape';
+@icon-adv-tree-phone-name: 'icon-adv-tree-phone';
+@icon-adv-tree-phone-x: 189px;
+@icon-adv-tree-phone-y: 169px;
+@icon-adv-tree-phone-offset-x: -189px;
+@icon-adv-tree-phone-offset-y: -169px;
+@icon-adv-tree-phone-width: 40px;
+@icon-adv-tree-phone-height: 44px;
+@icon-adv-tree-phone-total-width: 374px;
+@icon-adv-tree-phone-total-height: 302px;
+@icon-adv-tree-phone-image: '../img/sprite.png';
+@icon-adv-tree-phone: 189px 169px -189px -169px 40px 44px 374px 302px '../img/sprite.png' 'icon-adv-tree-phone';
+@icon-adv-tree-name: 'icon-adv-tree';
+@icon-adv-tree-x: 191px;
+@icon-adv-tree-y: 85px;
+@icon-adv-tree-offset-x: -191px;
+@icon-adv-tree-offset-y: -85px;
+@icon-adv-tree-width: 73px;
+@icon-adv-tree-height: 82px;
+@icon-adv-tree-total-width: 374px;
+@icon-adv-tree-total-height: 302px;
+@icon-adv-tree-image: '../img/sprite.png';
+@icon-adv-tree: 191px 85px -191px -85px 73px 82px 374px 302px '../img/sprite.png' 'icon-adv-tree';
+@icon-back-menu-name: 'icon-back-menu';
+@icon-back-menu-x: 335px;
+@icon-back-menu-y: 278px;
+@icon-back-menu-offset-x: -335px;
+@icon-back-menu-offset-y: -278px;
+@icon-back-menu-width: 31px;
+@icon-back-menu-height: 21px;
+@icon-back-menu-total-width: 374px;
+@icon-back-menu-total-height: 302px;
+@icon-back-menu-image: '../img/sprite.png';
+@icon-back-menu: 335px 278px -335px -278px 31px 21px 374px 302px '../img/sprite.png' 'icon-back-menu';
+@icon-carousel-left-name: 'icon-carousel-left';
+@icon-carousel-left-x: 310px;
+@icon-carousel-left-y: 162px;
+@icon-carousel-left-offset-x: -310px;
+@icon-carousel-left-offset-y: -162px;
+@icon-carousel-left-width: 17px;
+@icon-carousel-left-height: 46px;
+@icon-carousel-left-total-width: 374px;
+@icon-carousel-left-total-height: 302px;
+@icon-carousel-left-image: '../img/sprite.png';
+@icon-carousel-left: 310px 162px -310px -162px 17px 46px 374px 302px '../img/sprite.png' 'icon-carousel-left';
+@icon-carousel-right-name: 'icon-carousel-right';
+@icon-carousel-right-x: 308px;
+@icon-carousel-right-y: 73px;
+@icon-carousel-right-offset-x: -308px;
+@icon-carousel-right-offset-y: -73px;
+@icon-carousel-right-width: 17px;
+@icon-carousel-right-height: 46px;
+@icon-carousel-right-total-width: 374px;
+@icon-carousel-right-total-height: 302px;
+@icon-carousel-right-image: '../img/sprite.png';
+@icon-carousel-right: 308px 73px -308px -73px 17px 46px 374px 302px '../img/sprite.png' 'icon-carousel-right';
+@icon-flag-phone-name: 'icon-flag-phone';
+@icon-flag-phone-x: 149px;
+@icon-flag-phone-y: 169px;
+@icon-flag-phone-offset-x: -149px;
+@icon-flag-phone-offset-y: -169px;
+@icon-flag-phone-width: 40px;
+@icon-flag-phone-height: 45px;
+@icon-flag-phone-total-width: 374px;
+@icon-flag-phone-total-height: 302px;
+@icon-flag-phone-image: '../img/sprite.png';
+@icon-flag-phone: 149px 169px -149px -169px 40px 45px 374px 302px '../img/sprite.png' 'icon-flag-phone';
+@icon-flag-name: 'icon-flag';
+@icon-flag-x: 191px;
+@icon-flag-y: 0px;
+@icon-flag-offset-x: -191px;
+@icon-flag-offset-y: 0px;
+@icon-flag-width: 75px;
+@icon-flag-height: 85px;
+@icon-flag-total-width: 374px;
+@icon-flag-total-height: 302px;
+@icon-flag-image: '../img/sprite.png';
+@icon-flag: 191px 0px -191px 0px 75px 85px 374px 302px '../img/sprite.png' 'icon-flag';
+@icon-mail-name: 'icon-mail';
+@icon-mail-x: 308px;
+@icon-mail-y: 145px;
+@icon-mail-offset-x: -308px;
+@icon-mail-offset-y: -145px;
+@icon-mail-width: 20px;
+@icon-mail-height: 15px;
+@icon-mail-total-width: 374px;
+@icon-mail-total-height: 302px;
+@icon-mail-image: '../img/sprite.png';
+@icon-mail: 308px 145px -308px -145px 20px 15px 374px 302px '../img/sprite.png' 'icon-mail';
+@icon-map-name: 'icon-map';
+@icon-map-x: 96px;
+@icon-map-y: 140px;
+@icon-map-offset-x: -96px;
+@icon-map-offset-y: -140px;
+@icon-map-width: 15px;
+@icon-map-height: 24px;
+@icon-map-total-width: 374px;
+@icon-map-total-height: 302px;
+@icon-map-image: '../img/sprite.png';
+@icon-map: 96px 140px -96px -140px 15px 24px 374px 302px '../img/sprite.png' 'icon-map';
+@icon-menu-burger-name: 'icon-menu-burger';
+@icon-menu-burger-x: 83px;
+@icon-menu-burger-y: 255px;
+@icon-menu-burger-offset-x: -83px;
+@icon-menu-burger-offset-y: -255px;
+@icon-menu-burger-width: 52px;
+@icon-menu-burger-height: 32px;
+@icon-menu-burger-total-width: 374px;
+@icon-menu-burger-total-height: 302px;
+@icon-menu-burger-image: '../img/sprite.png';
+@icon-menu-burger: 83px 255px -83px -255px 52px 32px 374px 302px '../img/sprite.png' 'icon-menu-burger';
+@icon-modal-close-name: 'icon-modal-close';
+@icon-modal-close-x: 335px;
+@icon-modal-close-y: 250px;
+@icon-modal-close-offset-x: -335px;
+@icon-modal-close-offset-y: -250px;
+@icon-modal-close-width: 28px;
+@icon-modal-close-height: 28px;
+@icon-modal-close-total-width: 374px;
+@icon-modal-close-total-height: 302px;
+@icon-modal-close-image: '../img/sprite.png';
+@icon-modal-close: 335px 250px -335px -250px 28px 28px 374px 302px '../img/sprite.png' 'icon-modal-close';
+@icon-pay-card-phone-name: 'icon-pay-card-phone';
+@icon-pay-card-phone-x: 130px;
+@icon-pay-card-phone-y: 74px;
+@icon-pay-card-phone-offset-x: -130px;
+@icon-pay-card-phone-offset-y: -74px;
+@icon-pay-card-phone-width: 27px;
+@icon-pay-card-phone-height: 20px;
+@icon-pay-card-phone-total-width: 374px;
+@icon-pay-card-phone-total-height: 302px;
+@icon-pay-card-phone-image: '../img/sprite.png';
+@icon-pay-card-phone: 130px 74px -130px -74px 27px 20px 374px 302px '../img/sprite.png' 'icon-pay-card-phone';
+@icon-pay-card-name: 'icon-pay-card';
+@icon-pay-card-x: 88px;
+@icon-pay-card-y: 74px;
+@icon-pay-card-offset-x: -88px;
+@icon-pay-card-offset-y: -74px;
+@icon-pay-card-width: 42px;
+@icon-pay-card-height: 28px;
+@icon-pay-card-total-width: 374px;
+@icon-pay-card-total-height: 302px;
+@icon-pay-card-image: '../img/sprite.png';
+@icon-pay-card: 88px 74px -88px -74px 42px 28px 374px 302px '../img/sprite.png' 'icon-pay-card';
+@icon-pay-nomoney-phone-name: 'icon-pay-nomoney-phone';
+@icon-pay-nomoney-phone-x: 149px;
+@icon-pay-nomoney-phone-y: 102px;
+@icon-pay-nomoney-phone-offset-x: -149px;
+@icon-pay-nomoney-phone-offset-y: -102px;
+@icon-pay-nomoney-phone-width: 19px;
+@icon-pay-nomoney-phone-height: 26px;
+@icon-pay-nomoney-phone-total-width: 374px;
+@icon-pay-nomoney-phone-total-height: 302px;
+@icon-pay-nomoney-phone-image: '../img/sprite.png';
+@icon-pay-nomoney-phone: 149px 102px -149px -102px 19px 26px 374px 302px '../img/sprite.png' 'icon-pay-nomoney-phone';
+@icon-pay-nomoney-name: 'icon-pay-nomoney';
+@icon-pay-nomoney-x: 335px;
+@icon-pay-nomoney-y: 214px;
+@icon-pay-nomoney-offset-x: -335px;
+@icon-pay-nomoney-offset-y: -214px;
+@icon-pay-nomoney-width: 30px;
+@icon-pay-nomoney-height: 36px;
+@icon-pay-nomoney-total-width: 374px;
+@icon-pay-nomoney-total-height: 302px;
+@icon-pay-nomoney-image: '../img/sprite.png';
+@icon-pay-nomoney: 335px 214px -335px -214px 30px 36px 374px 302px '../img/sprite.png' 'icon-pay-nomoney';
+@icon-pay-percent-phone-name: 'icon-pay-percent-phone';
+@icon-pay-percent-phone-x: 310px;
+@icon-pay-percent-phone-y: 208px;
+@icon-pay-percent-phone-offset-x: -310px;
+@icon-pay-percent-phone-offset-y: -208px;
+@icon-pay-percent-phone-width: 21px;
+@icon-pay-percent-phone-height: 27px;
+@icon-pay-percent-phone-total-width: 374px;
+@icon-pay-percent-phone-total-height: 302px;
+@icon-pay-percent-phone-image: '../img/sprite.png';
+@icon-pay-percent-phone: 310px 208px -310px -208px 21px 27px 374px 302px '../img/sprite.png' 'icon-pay-percent-phone';
+@icon-pay-percent-name: 'icon-pay-percent';
+@icon-pay-percent-x: 335px;
+@icon-pay-percent-y: 177px;
+@icon-pay-percent-offset-x: -335px;
+@icon-pay-percent-offset-y: -177px;
+@icon-pay-percent-width: 32px;
+@icon-pay-percent-height: 37px;
+@icon-pay-percent-total-width: 374px;
+@icon-pay-percent-total-height: 302px;
+@icon-pay-percent-image: '../img/sprite.png';
+@icon-pay-percent: 335px 177px -335px -177px 32px 37px 374px 302px '../img/sprite.png' 'icon-pay-percent';
+@icon-pay-purse-phone-name: 'icon-pay-purse-phone';
+@icon-pay-purse-phone-x: 308px;
+@icon-pay-purse-phone-y: 119px;
+@icon-pay-purse-phone-offset-x: -308px;
+@icon-pay-purse-phone-offset-y: -119px;
+@icon-pay-purse-phone-width: 24px;
+@icon-pay-purse-phone-height: 26px;
+@icon-pay-purse-phone-total-width: 374px;
+@icon-pay-purse-phone-total-height: 302px;
+@icon-pay-purse-phone-image: '../img/sprite.png';
+@icon-pay-purse-phone: 308px 119px -308px -119px 24px 26px 374px 302px '../img/sprite.png' 'icon-pay-purse-phone';
+@icon-pay-purse-name: 'icon-pay-purse';
+@icon-pay-purse-x: 335px;
+@icon-pay-purse-y: 95px;
+@icon-pay-purse-offset-x: -335px;
+@icon-pay-purse-offset-y: -95px;
+@icon-pay-purse-width: 36px;
+@icon-pay-purse-height: 36px;
+@icon-pay-purse-total-width: 374px;
+@icon-pay-purse-total-height: 302px;
+@icon-pay-purse-image: '../img/sprite.png';
+@icon-pay-purse: 335px 95px -335px -95px 36px 36px 374px 302px '../img/sprite.png' 'icon-pay-purse';
+@icon-phone-name: 'icon-phone';
+@icon-phone-x: 168px;
+@icon-phone-y: 102px;
+@icon-phone-offset-x: -168px;
+@icon-phone-offset-y: -102px;
+@icon-phone-width: 16px;
+@icon-phone-height: 25px;
+@icon-phone-total-width: 374px;
+@icon-phone-total-height: 302px;
+@icon-phone-image: '../img/sprite.png';
+@icon-phone: 168px 102px -168px -102px 16px 25px 374px 302px '../img/sprite.png' 'icon-phone';
+@spritesheet-width: 374px;
+@spritesheet-height: 302px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @icon-action @icon-adv-battery-phone @icon-adv-battery @icon-adv-fire-phone @icon-adv-fire @icon-adv-mute-phone @icon-adv-mute @icon-adv-phone-phone @icon-adv-phone @icon-adv-pig-phone @icon-adv-pig @icon-adv-shield-phone @icon-adv-shield @icon-adv-tape-phone @icon-adv-tape @icon-adv-tree-phone @icon-adv-tree @icon-back-menu @icon-carousel-left @icon-carousel-right @icon-flag-phone @icon-flag @icon-mail @icon-map @icon-menu-burger @icon-modal-close @icon-pay-card-phone @icon-pay-card @icon-pay-nomoney-phone @icon-pay-nomoney @icon-pay-percent-phone @icon-pay-percent @icon-pay-purse-phone @icon-pay-purse @icon-phone;
+@spritesheet: 374px 302px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

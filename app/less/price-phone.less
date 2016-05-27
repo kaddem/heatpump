@@ -1,0 +1,127 @@
+.price{
+  background-color: @orange-color;
+  background-image: url(../img/bg-price.png);
+  background-repeat: repeat;
+  padding: 20px 0 0 0;
+  .ffbold;
+
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .range{
+    margin: 0;
+  }
+  &__header{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+  }
+  &__menu{
+    text-align: center;
+    font-size: 22px;
+  }
+  &__nav{
+    display: block;
+    margin: 20px 0;
+    &-item{
+      display: inline-block;
+    }
+    a{
+      display: inline-block;
+      background-color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: #000;
+    }
+    .active{
+      color: @orange-color;
+    }
+  }
+  &__item{
+    .col-12;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  &__head{
+    background-color: #326497;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    font-size: 26px;
+    line-height: 26px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  &__name, &__price{
+    padding: 15px;
+    line-height: 46px;
+    // background-color: #326497;
+  }
+  &__square{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    .fflite;
+    font-size: 16px;
+    color: #326497;
+    font-variant: small-caps;
+  }
+  &__description{
+    background-color: #fff;
+    padding: 10px 20px 30px 20px;
+    text-align: center;
+    position: relative;
+  }
+  &__price{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+  }
+  &__text{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__list{
+    list-style: none;
+    text-align: left;
+    &-item{
+      position: relative;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      .ffnormal;
+      &:before{
+        position: absolute;
+        left: 0;
+        top: 5px;
+        content: '';
+        display: block;
+        width: 13px;
+        height: 13px;
+        background-color: @orange-color;
+      }
+    }
+  }
+  &__btn{
+    background-color: @orange-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 265px;
+    padding: 17px;
+  }
+}

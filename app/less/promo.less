@@ -1,0 +1,59 @@
+.promo{
+  background-image: url(../img/bg-promo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ffnormal;
+  color: @text-color;
+  padding: 25px 0 0 0;
+  min-width: 1180px;
+
+  .container{
+    position: relative;
+    padding-bottom: 180px;
+    &:before{
+      content: '';
+      width: 1320px;
+      height: 480px;
+      background-image: url(../img/promo-pump.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -600px;
+      bottom: -1px;
+    }
+  }
+  .logo-nibe{
+    position: absolute;
+    right: 10px;
+    bottom: -150px;
+  }
+
+  &__block{
+    .col-6;
+    .col-offset-6;
+    position: relative;
+  }
+  &__head{
+    margin: 0;
+    font-size: 32px;
+    line-height: 48px;
+    .ffbold;
+    text-transform: uppercase;
+  }
+  &__description{
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &__btn{
+    width: 225px;
+    background-color: @yellow-color;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    .ffnormal;
+    padding: 15px 5px;
+    z-index: 9;
+  }
+}

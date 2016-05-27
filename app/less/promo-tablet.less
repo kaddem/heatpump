@@ -1,0 +1,61 @@
+.promo{
+  background-image: url(../img/bg-promo-tablet.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ffnormal;
+  color: @text-color;
+  padding-top: 45px;
+  position: relative;
+
+  .container{
+    // position: relative;
+    padding-bottom: 45px;
+    &:before{
+      content: '';
+      width: 440px;
+      height: 440px;
+      background-image: url(../img/promo-pump-tablet.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+  .logo-nibe{
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    width: 150px;
+  }
+
+  &__block{
+    .col-7;
+    .col-offset-5;
+    position: relative;
+  }
+  &__head{
+    margin: 0;
+    font-size: 30px;
+    line-height: 48px;
+    .ffbold;
+    text-transform: uppercase;
+  }
+  &__description{
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 36px;
+    padding-right: 20px;
+  }
+  &__btn{
+    width: 225px;
+    background-color: @yellow-color;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    .ffnormal;
+    padding: 15px 5px;
+    z-index: 9;
+  }
+}

@@ -1,0 +1,32 @@
+.sertificate{
+  background-color: @grey-color;
+  color: @text-color;
+  padding: 5px 0 45px 0;
+
+  &__header{
+    text-align: center;
+    .ffbold;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__gallery{
+    .col-12;
+    list-style: none;
+    text-align: center;
+  }
+  &__item{
+    padding: 5px;
+    display: inline-block;
+    width: 350px;
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__img{
+    box-shadow: 0 0 10px -2px #000;
+    width: 100%;
+  }
+}
