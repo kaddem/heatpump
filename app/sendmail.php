@@ -22,29 +22,24 @@
   $phone = $_POST['form_phone'];
   $date = $_POST['form_date'];
   $text = $_POST['form_text'];
-  // $quantity = $_POST['form_quantity'];
-  // if (isset($area) && isset($quantity)){
-  //   $comments = "Площадь: ".$area." м.кв; \nКол-во помещений: ".$quantity;
-  // } else if (isset($date)) {
-  //   $comments ="Заказ обратного звонка на: ".$date;
-  // } else if(isset($gift)) {
-  //   $comments ="Выбранный подарок: ".$gift;
-  // } else if(isset($text)) {
-  //   $comments ="Выбранный подарок: ".$text;
-  // } else {
-  //   $comments ="";
-  // }
+  if (isset($date)) {
+    $comments = "Заказ обратного звонка на: ".$date;
+  } else if (isset($text)) {
+    $comments ="Дополнение: ".$text;
+  } else {
+    $comments = "";
+  }
+  
 
 
   // create email body and send it
   // $to = 'order@rosa-montazh.ru'; // put your email
-  $to = 'kademidov@gmail.com'; // put your email
-  $subject = "Заявка от $name | ".$title;
+  $to = 'order@rosa-montazh.ru'; // put your email
+  $subject = "Заявка от $name | ".$title. " | Сайт тепловые насосы Nibe";
   $message = "Заполнена форма ".$title.". \n\n".
     "Данные отправителя:\n\nИмя: ".$name." \n".
     "Почта: ".$email." \n".
     "Телефон: ".$phone." \n".
-    "перезвонить если указано: ".$date." \n".
     $comments;
   $headers = "From: ".$name." <".$email.">" . "\r\n" .
     "Reply-To: ".$name." <".$email.">" . "\r\n" ;
@@ -78,11 +73,11 @@
     $date = $_POST['form_date'];
     // $gift = $_POST['form_gift'];
     $text = $_POST['form_text'];
-    $quantity = $_POST['form_quantity'];
+    // $quantity = $_POST['form_quantity'];
     if (isset($date)) {
       $comments = "Заказ обратного звонка на: ".$date;
     } else if (isset($text)) {
-      $comments ="Комментарий клиента: ".$text;
+      $comments ="Дополнение: ".$text;
     } else {
       $comments = "";
     }
@@ -94,7 +89,7 @@
       'EMAIL_OTHER' => $email,
       'PHONE_WORK' => $phone,
       'COMMENTS' => $comments,
-      'SOURCE_ID' => 'Сайт Системы отопления',
+      'SOURCE_ID' => 'Сайт Тепловые насосы Nibe',
       'STATUS_DESCRIPTION' => $title,
       // 'ASSIGNED_BY_ID' => '',
     );

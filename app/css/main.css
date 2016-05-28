@@ -543,10 +543,15 @@ label.error {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+    color: #fff;
+    margin-top: 0;
   }
   .price__menu {
     text-align: center;
     font-size: 30px;
+  }
+  .price__menu span {
+    color: #fff;
   }
   .price__nav {
     display: inline-block;
@@ -1625,10 +1630,15 @@ label.error {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 0;
+    color: #fff;
   }
   .price__menu {
     text-align: center;
     font-size: 30px;
+  }
+  .price__menu span {
+    color: #fff;
   }
   .price__nav {
     display: inline-block;
@@ -2722,10 +2732,14 @@ label.error {
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
+    color: #fff;
   }
   .price__menu {
     text-align: center;
     font-size: 22px;
+  }
+  .price__menu span {
+    color: #fff;
   }
   .price__nav {
     display: block;
