@@ -5,6 +5,11 @@
   main{
     min-width: @laptop-min;
   }
+  // .modal-thank-you{
+  //   &__head{
+  //     border-bottom: 1px solid @text-color;
+  //   }
+  // }
   @import url(header.less);
   @import url(promo.less);
   @import url(action.less);
@@ -53,6 +58,13 @@
     min-width: @phone-min - 20;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .modal{
+  border-radius: 0;
+    width: @phone-min - 20;
+  }
+  main{
+    margin-top: 95px;
   }
   @import url(header-phone.less);
   @import url(promo-phone.less);

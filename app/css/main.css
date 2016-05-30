@@ -205,7 +205,7 @@ main {
 .modal {
   -webkit-border-radius: 0;
   border-radius: 0;
-  width: 320px;
+  min-width: 300px;
 }
 .modal a.close-modal {
   top: 5px;
@@ -214,6 +214,12 @@ main {
   background-position: -335px -250px;
   width: 28px;
   height: 28px;
+}
+.modal-thank-you__head {
+  display: block;
+  border-bottom: 1px solid #434242;
+  padding-bottom: 10px;
+  color: #f08456;
 }
 .form {
   padding: 25px;
@@ -861,7 +867,8 @@ label.error {
     font-family: "Segoe Ui", sans-serif;
   }
   .services {
-    background-image: url(../img/bg-services.jpg);
+    background-color: #5A5148;
+    background-image: url(../img/bg-services-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10px;
@@ -1273,10 +1280,16 @@ label.error {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  footer .range {
+    font-size: 0;
+  }
   footer .logo-footer {
     width: 8.33333333%;
     padding: 0 10px;
     float: left;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
     padding-top: 5px;
   }
   footer .contacts {
@@ -1284,9 +1297,12 @@ label.error {
     width: 66.66666667%;
     padding: 0 10px;
     float: left;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
   }
   footer .contacts li {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   footer .contacts a {
     color: #fff;
@@ -1350,6 +1366,9 @@ label.error {
     width: 25%;
     padding: 0 10px;
     float: left;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
     font-family: "Segoe Ui Lite", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -1948,7 +1967,8 @@ label.error {
     font-family: "Segoe Ui", sans-serif;
   }
   .services {
-    background-image: url(../img/bg-services-tablet.jpg);
+    background-color: #5A5148;
+    background-image: url(../img/bg-services-tablet-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10px;
@@ -2374,10 +2394,16 @@ label.error {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  footer .range {
+    font-size: 0;
+  }
   footer .logo-footer {
     width: 16.66666667%;
     padding: 0 10px;
     float: left;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
     padding-top: 5px;
   }
   footer .contacts {
@@ -2385,9 +2411,12 @@ label.error {
     width: 50%;
     padding: 0 10px;
     float: left;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
   }
   footer .contacts li {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   footer .contacts a {
     color: #fff;
@@ -2436,7 +2465,7 @@ label.error {
   }
   footer .adress {
     font-family: "Segoe Ui Lite", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   footer .adress:before {
@@ -2452,6 +2481,9 @@ label.error {
     padding: 0 10px;
     float: left;
     font-family: "Segoe Ui Lite", sans-serif;
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
     font-size: 18px;
     line-height: 24px;
   }
@@ -2470,6 +2502,14 @@ label.error {
     min-width: 300px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .modal {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width: 300px;
+  }
+  main {
+    margin-top: 95px;
   }
   header {
     position: fixed;
@@ -2504,6 +2544,9 @@ label.error {
     padding: 0 10px;
     float: left;
     text-align: center;
+  }
+  header .logo img {
+    width: 45px;
   }
   header .main-nav {
     width: 66.66666667%;
@@ -2568,7 +2611,7 @@ label.error {
     font-size: 14px;
     line-height: 22px;
     width: 140px;
-    padding: 14px 10px;
+    padding: 5px 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -3010,7 +3053,8 @@ label.error {
     font-family: "Segoe Ui", sans-serif;
   }
   .services {
-    background-image: url(../img/bg-services-phone.jpg);
+    background-color: #5A5148;
+    background-image: url(../img/bg-services-phone-dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
