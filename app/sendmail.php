@@ -69,11 +69,8 @@
     $name = $_POST['form_name'];
     $email = $_POST['form_email'];
     $phone = $_POST['form_phone'];
-    // $area = $_POST['form_area'];
     $date = $_POST['form_date'];
-    // $gift = $_POST['form_gift'];
     $text = $_POST['form_text'];
-    // $quantity = $_POST['form_quantity'];
     if (isset($date)) {
       $comments = "Заказ обратного звонка на: ".$date;
     } else if (isset($text)) {
