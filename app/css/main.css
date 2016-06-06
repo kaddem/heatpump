@@ -261,7 +261,7 @@ main {
   display: none;
 }
 .blocker {
-  z-index: 99999;
+  z-index: 9999;
   padding: 0;
 }
 .owl-carousel .owl-nav {
@@ -311,6 +311,34 @@ label.error {
 }
 .map {
   height: 380px;
+}
+.preload:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  overflow: auto;
+}
+.preload:after {
+  content: '';
+  background-image: url(../img/preloader.svg);
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10000;
 }
 @media screen and (min-width: 1180px) {
   .container {
